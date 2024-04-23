@@ -3,9 +3,9 @@ import Nav from "./nav"
 
 export default function Header() {
 	return (
-		<header style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }}>
-			<h1 style={{ fontSize: "4rem" }}>
-				Zach Raab{"  "}<span style={{ fontSize: "2rem" }}>Full-Stack Developer</span>
+		<header className="flex">
+			<h1 className="font-bold">
+				Zach Raab Full-Stack Developer
 			</h1>
 
 			<Nav />
