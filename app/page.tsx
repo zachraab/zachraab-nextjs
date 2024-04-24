@@ -1,11 +1,11 @@
-import Header from "./Header/header";
-import AboutMe from "./about-me"
+import Nav from "./nav";
+import AboutMe from "./about-me";
 import Footer from "./footer"
 
 export default function Home() {
 	return (
 		<>
-			<Header />
+			<Nav />
 
 			<AboutMe />
 
