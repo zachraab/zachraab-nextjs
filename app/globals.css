@@ -32,6 +32,10 @@
 			max-height: 200px;
 		}
 
+		h3 {
+			width: 100% !important;
+		}
+
 		nav, footer, .tech-skills {
 			display: none;
 		}

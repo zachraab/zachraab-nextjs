@@ -42,7 +42,7 @@ export default function Resume() {
 				<div>
 					<h2 className="font-bold text-lg">Professional Experience</h2>
 					<hr/>
-					<h3 className="flex w-1/2 mb-2 border-b hover:border-black">
+					<h3 className="flex w-3/4 mb-2 border-b hover:border-black">
 						<span className="basis-1/4">Zach Raab</span>
 						<span className="basis-1/4">React Developer</span>
 						<span className="basis-1/4">Denver, CO</span>
@@ -51,7 +51,7 @@ export default function Resume() {
 					<ul className="list-disc list-inside mb-4">
 						<li>Contract web dev work for creative and web dev agencies, focusing mostly on wordpress developement.</li>
 					</ul>
-					<h3 className="flex w-1/2 mb-2 border-b hover:border-black">
+					<h3 className="flex w-3/4 mb-2 border-b hover:border-black">
 						<span className="basis-1/4">Blennd</span>
 						<span className="basis-1/4">WordPress Developer</span>
 						<span className="basis-1/4">Denver, CO</span>
