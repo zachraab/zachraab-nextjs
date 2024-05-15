@@ -1,17 +1,19 @@
 import hikingImage from "../../public/images/IMG_0999.jpg"
 import danceImage from "../../public/images/dance pose.jpg"
+import partyImage from "../../public/images/Dance party.jpg"
 
 export default function AboutMe() {
 	return (
 		<div className="mb-5">
 			<div className="flex mb-5">
-				<img className="basis-1/2 h-80 object-bottom object-cover" src={hikingImage.src} alt="Zach standing in front of a lake and mountain view." />
-				<img className="basis-1/2 h-80 object-top object-cover" src={danceImage.src} alt="Zach holding Erika in his arms." />
+				<img className="basis-1/3 h-80 object-bottom object-cover" src={hikingImage.src} alt="Zach standing in front of a lake and mountain view." />
+				<img className="basis-1/3 h-80 object-top object-cover" src={danceImage.src} alt="Zach holding Erika in his arms." />
+				<img className="basis-1/3 h-80 object-top object-cover" src={partyImage.src} alt="People dancing and singing." />
 			</div>
 			<h2 className="font-bold text-xl">About Me</h2>
 				<hr/>
 			<p>
-				Growing up in Colorado, Zach found himself most weekends roaming the trails of Deer Creek Canyon. From a young age, he had a passion for music as a saxophonist and ventured on to study jazz and the art of composition. Zach and his wife Erika are professional ballroom dancers and dance instructors. They travel to compete around the western region of the US.
+				Growing up in Colorado, Zach found himself most weekends roaming the trails of Deer Creek Canyon. Zach and his wife Erika are professional ballroom dancers and dance instructors. They have been dancing and teaching together for 3 years while traveling to compete around the western region of the US. From a young age, he had a passion for music as a saxophonist and ventured on to study jazz and the art of music composition. He is also a DJ and has been in the business for 9 years, providing entertainment to weddings and parties all over Colorado.
 			</p>
 				<br/>
 			<p>

@@ -4,21 +4,35 @@
 
 @layer components {
 	.main-content {
-		padding-top: 10rem;
-		padding-bottom: 10rem;
-		margin-left: 10rem;
-		margin-right: 10rem;
-		hr {
-			padding-bottom: 1rem;
+		padding-top: 7rem;
+		padding-bottom: 2rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		.main-content {
+			padding-top: 10rem;
+			padding-bottom: 5rem;
+			margin-left: 10rem;
+			margin-right: 10rem;
 		}
+	}
+
+	hr {
+		padding-bottom: 1rem;
 	}
 
 	@media print {
 		.main-content {
-			padding: 5rem 0 0 0;
+			padding: 3rem 0 0 0;
 		}
 
-		nav, footer {
+		img {
+			max-height: 200px;
+		}
+
+		nav, footer, .tech-skills {
 			display: none;
 		}
 	}
