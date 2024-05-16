@@ -46,26 +46,32 @@ function ModalContentsBase(props) {
     );
 }
     
-function ModalContents({ title, children, ...props }) {
+function ModalContents({ children, darkMode, ...props }) {
     return (
         <ModalContentsBase {...props}>
-            <div className="bg-black text-white dark:bg-white dark:text-black" style={{ padding: "20px" }}>
+            <div className="bg-white text-black" >
                 <div css={{ display: "flex", justifyContent: "flex-end" }}>
                     <ModalDismissButton>
-                        {/* <i
-                        style={{
-                            position: "absolute",
-                            top: "10px",
-                            right: "10px",
-                            cursor: "pointer",
-                            fontSize: "24px",
-                            fontFamily: "sans-serif",
-                            fontStyle: "normal"
-                        }}
-                        ><FaWindowClose /></i> */}
+                        <i
+							className="ease-in-out duration-300 hover:bg-black hover:text-white"
+							style={{
+								position: "absolute",
+								top: "0",
+								right: "0",
+								padding: "5px 10px",
+								cursor: "pointer",
+								fontSize: "24px",
+								fontFamily: "sans-serif",
+								fontStyle: "normal",
+								lineHeight: "1",
+								color: darkMode ? 'white' : ''
+							}}
+                        >
+							x
+							{/* <FaWindowClose /> */}
+						</i>
                     </ModalDismissButton>
                 </div>
-                <h2 className="text-2xl text-center mt-4">{title}</h2>
                 {children}
             </div>
         </ModalContentsBase>

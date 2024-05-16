@@ -1,4 +1,5 @@
 import Nav from "./components/nav";
+import HeroHome from "./components/hero-home"
 import AboutMe from "./components/about-me";
 import CaseStudies from "./components/case-studies";
 
@@ -7,7 +8,8 @@ export default function Home() {
 		<>
 			<Nav />
 
-			<div className="main-content">
+			<div className="main-content mb-56">
+				<HeroHome />
 				<AboutMe />
 				<CaseStudies />
 			</div>
