@@ -6,10 +6,10 @@ import CaseStudy from "./case-study"
 export default function CaseStudies() {
 	return (
 		<section>
-			<h2 data-aos="fade-in" className="font-bold text-xl">Previous Work</h2>
+			<h2 data-aos="fade-in" className="font-bold text-4xl">Previous Work</h2>
 			<hr />
 
-			<div data-aos="fade-left" className="flex flex-wrap">
+			<div data-aos="fade-left" className="flex flex-col flex-wrap">
 				<CaseStudy 
 					name="Sycle" 
 					url="https://coc.sycle.net/" 
@@ -31,6 +31,8 @@ export default function CaseStudies() {
 					url="https://western.edu/" 
 					img={WesternLogo} 
 					description="At Western, students are immersed in experiential learning, guided by professors who care, in an outdoor landscape like no other."
+					bgColor=''
+					darkMode={false}
 					// #a71930
 				/>
 			</div>

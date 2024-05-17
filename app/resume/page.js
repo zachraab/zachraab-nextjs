@@ -8,7 +8,7 @@ export default function Resume() {
 		<>
 			<Nav />
 
-			<div className="main-content">
+			<div className="main-content resume">
 				<div className="mb-4 flex flex-col sm:flex-row sm:space-x-8">
 					<Image 
 						src="/DSC_1344.jpg"

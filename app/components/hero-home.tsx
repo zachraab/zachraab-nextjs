@@ -6,8 +6,8 @@ import partyImage from "../../public/Dance party.jpg"
 export default function heroHome() {
 	return(
 		<section>
-			<h1 className="font-bold text-xl mb-16">Hello!!</h1>
-			<div className="flex mb-56">
+			<h1 className="font-bold text-4xl text-center mb-16">Hello!!</h1>
+			<div className="flex">
 				<Image 
 					src={hikingImage.src}
 					alt="Zach standing in front of a lake and mountain view."

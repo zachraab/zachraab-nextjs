@@ -4,18 +4,32 @@
 
 @layer components {
 	.main-content {
-		padding-top: 7rem;
+		padding-top: 20rem;
 		padding-bottom: 2rem;
-		margin-left: 2rem;
-		margin-right: 2rem;
+	}
+
+	.resume {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	section {
+		padding: 2rem;
 	}
 
 	@media screen and (min-width: 768px) {
 		.main-content {
-			padding-top: 10rem;
+			padding-top: 12rem;
 			padding-bottom: 5rem;
-			margin-left: 10rem;
-			margin-right: 10rem;
+		}
+
+		.resume {
+			padding-left: 8rem;
+			padding-right: 8rem;
+		}
+
+		section {
+			padding: 10rem;
 		}
 	}
 
