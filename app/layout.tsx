@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Modal from "./components/nav-modal"
-import { AOSInit } from './aos'
+import Modal from "./components/nav-modal";
+import { AOSInit } from './aos';
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,10 @@ export default function RootLayout({
 		<html lang="en">
 			<AOSInit />
 			<body className={inter.className}>
-				{children}
-				<Modal/>
+				<Suspense>
+					{children}
+					<Modal/>
+				</Suspense>
 			</body>
 		</html>
 	);

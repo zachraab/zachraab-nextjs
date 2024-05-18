@@ -5,16 +5,17 @@ import Image from 'next/image';
 import modalImage from "../../public/PXL_20220721_172734151.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineSend } from "react-icons/ai";
-import { Suspense } from "react";
+// import { Suspense } from "react";
 
 function NavModal() {
+
     const searchParams = useSearchParams();
     const modal = searchParams.get("modal");
     const pathname = usePathname();
 
     return (
         <>
-			<Suspense>
+			
             {modal &&
                 <dialog
                     className="fixed left-0 top-0 w-full h-full bg-black bg-opacity-50 z-50 overflow-auto backdrop-blur flex justify-center items-center">
@@ -48,7 +49,6 @@ function NavModal() {
 									margin: "0"
 								}}
 							>
-								<button type="button" className="relative overflow-hidden">
 									<i
 										className="ease-in-out duration-300 hover:bg-black hover:text-white"
 										style={{
@@ -62,13 +62,11 @@ function NavModal() {
 									>
 										x
 									</i>
-								</button>
 							</Link>
                         </div>
                     </div>
                 </dialog>
-            }
-			</Suspense>
+            }			
         </>
     );
 }
