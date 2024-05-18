@@ -53,7 +53,7 @@ export default function Resume() {
 						<span className="basis-1/4">Nov 2022 - Present</span>
 					</h3>
 					<ul className="list-disc list-inside mb-4">
-						<li data-aos="fade-left">Contract web dev work for creative and web dev agencies, focusing mostly on wordpress developement.</li>
+						<li data-aos="fade-in">Contract web dev work for creative and web dev agencies, focusing mostly on wordpress developement.</li>
 					</ul>
 					<h3  data-aos="fade-in"className="flex w-3/4 mb-2 border-b hover:border-black">
 						<span className="basis-1/4">Blennd</span>
@@ -63,18 +63,18 @@ export default function Resume() {
 					</h3>
 					<ul className="list-disc list-inside">
 						{/* Reference Inflow, Sycle, Western */}
-						<li data-aos="fade-left">Translated custom designs into functional, responsive, cross-browser compatible web experiences within
+						<li data-aos="fade-in">Translated custom designs into functional, responsive, cross-browser compatible web experiences within
 						WordPress and other CMS platforms.</li>
-						<li data-aos="fade-left">Collaborated with project team and delivered high quality products under budgeted hours.</li>
-						<li data-aos="fade-left">Built flexible, scalable, and maintainable websites and solutions that are efficient and minimize the time required
+						<li data-aos="fade-in">Collaborated with project team and delivered high quality products under budgeted hours.</li>
+						<li data-aos="fade-in">Built flexible, scalable, and maintainable websites and solutions that are efficient and minimize the time required
 						to bugfix or introduce new features.</li>
-						<li data-aos="fade-left">Provided strategic insights and reviews of design solutions prior to development resulting in more performant
+						<li data-aos="fade-in">Provided strategic insights and reviews of design solutions prior to development resulting in more performant
 						products and better user experience.</li>
-						<li data-aos="fade-left">Handled version control (Git) and continuous integration deployments of code between development, staging,
+						<li data-aos="fade-in">Handled version control (Git) and continuous integration deployments of code between development, staging,
 						and production environments.</li>
-						<li data-aos="fade-left">Participated in code reviews to instill the highest of code quality, ensure best practices, and continuous
+						<li data-aos="fade-in">Participated in code reviews to instill the highest of code quality, ensure best practices, and continuous
 						improvement of the team with thorough testing.</li>
-						<li data-aos="fade-left">Wrote documentation for common processes to  efficiently and save the
+						<li data-aos="fade-in">Wrote documentation for common processes to  efficiently and save the
 						company money.</li>
 					</ul>
 				</div>
