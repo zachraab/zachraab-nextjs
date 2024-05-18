@@ -1,7 +1,7 @@
 import Image from "next/image";
 import hikingImage from "../../public/IMG_0999.jpg"
-import danceImage from "../../public/dance pose.jpg"
-import partyImage from "../../public/Dance party.jpg"
+import danceImage from "../../public/dance-pose.jpg"
+import partyImage from "../../public/Dance-party.jpg"
 
 export default function heroHome() {
 	return(

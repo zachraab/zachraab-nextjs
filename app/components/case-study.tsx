@@ -10,7 +10,7 @@ export default function CaseStudy({ darkMode, bgColor, name, url, img, descripti
 		<>
 			<Modal>
 				<ModalOpenButton>
-						<button className="inline-block text-left no-underline hover:underline mr-3 mb-5 md:mb-3 md:text-base">{name}</button>
+						<button className="relative inline-block text-left no-underline w-fit before:ease before:duration-300 before:bg-gray-300 before:absolute before:left-0 before:bottom-0 before:translate-x-1/4 before:h-1/4 before:w-0 before:transform before:-skew-y-12 hover:before:w-full active:before:bg-gray-600 mb-5 md:mb-3 md:text-base"><span className='relative text-2xl'>{name}</span></button>
 				</ModalOpenButton>
 				<ModalContents darkMode={ darkMode ? true : false }>
 					<div 

@@ -41,6 +41,7 @@ function NavModal() {
 							</div>
 							<Link 
 								href={pathname}
+								className="relative overflow-hidden"
 								style={{
 									position: "absolute",
 									top: "0",
@@ -48,21 +49,19 @@ function NavModal() {
 									margin: "0"
 								}}
 							>
-								<button type="button" className="relative overflow-hidden">
-									<i
-										className="ease-in-out duration-300 hover:bg-black hover:text-white"
-										style={{
-											padding: "5px 10px",
-											cursor: "pointer",
-											fontSize: "24px",
-											fontFamily: "sans-serif",
-											fontStyle: "normal",
-											lineHeight: "1",
-										}}
-									>
-										x
-									</i>
-								</button>
+								<i
+									className="ease-in-out duration-300 hover:bg-black hover:text-white"
+									style={{
+										padding: "5px 10px",
+										cursor: "pointer",
+										fontSize: "24px",
+										fontFamily: "sans-serif",
+										fontStyle: "normal",
+										lineHeight: "1",
+									}}
+								>
+									x
+								</i>
 							</Link>
                         </div>
                     </div>
