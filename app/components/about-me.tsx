@@ -9,7 +9,7 @@ export default function AboutMe() {
 			</h2>
 				<hr/>
 			<p data-aos="fade-right">
-				Zach's upbringing amidst the natural splendor of Rocky Mountain National Park instilled a deep appreciation for the outdoors. He found himself most weekends roaming the trails of Deer Creek Canyon. Zach and his wife Erika are professional ballroom dancers and dance instructors. They have been dancing and teaching together for 3 years while traveling to compete around the western region of the US. From a young age, he had a passion for music as a saxophonist and ventured on to study jazz and the art of music composition. He is also a DJ and has been in the business for 9 years, providing entertainment to weddings and parties all over Colorado.
+				Zach&apos;s upbringing amidst the natural splendor of Rocky Mountain National Park instilled a deep appreciation for the outdoors. He found himself most weekends roaming the trails of Deer Creek Canyon. Zach and his wife Erika are professional ballroom dancers and dance instructors. They have been dancing and teaching together for 3 years while traveling to compete around the western region of the US. From a young age, he had a passion for music as a saxophonist and ventured on to study jazz and the art of music composition. He is also a DJ and has been in the business for 9 years, providing entertainment to weddings and parties all over Colorado.
 			</p>
 				<br/>
 			<p data-aos="fade-right" data-aos-delay="100">
