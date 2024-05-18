@@ -17,7 +17,7 @@ export default function heroHome() {
 					data-aos="fade-in"
 				/>
 				<div className="w-full lg:w-1/2">
-					<h1 data-aos="fade-in" className="font-bold text-4xl mb-16">Hi I'm Zach!</h1>
+					<h1 data-aos="fade-in" className="font-bold text-4xl mb-16">Hi I&apos;m Zach!</h1>
 					<p data-aos="fade-in">
 						As a React developer, Zach is proficient in Next.js, he has leveraged its server-side rendering capabilities to optimize performance and enhance user experience. His experience in React enables him to architect maintainable front-end solutions, ensuring seamless interaction and intuitive interfaces. Additionally, Zach is versed in TypeScript, utilizing its strong typing system to catch errors early in the development process and improve code reliability. His proficiency in Tailwind CSS allows him to efficiently style components and design visually appealing layouts while maintaining flexibility and consistency across projects. With a keen eye for detail and a passion for clean, modular code, Zach excels in driving projects forward with purpusefulness.
 					</p>
