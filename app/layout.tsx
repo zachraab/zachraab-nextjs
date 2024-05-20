@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AOSInit } from './aos';
+import { IsClientCtxProvider } from '../app/components/is-client-ctx';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,9 @@ export default function RootLayout({
 		<html lang="en">
 			<AOSInit />
 			<body className={inter.className}>
-				{children}
+				<IsClientCtxProvider>
+					{children}
+				</IsClientCtxProvider>
 			</body>
 		</html>
 	);

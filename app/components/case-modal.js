@@ -1,5 +1,7 @@
 "use client"
 
+// credit: https://www.daggala.com/global-modals-in-react/
+
 import React, {
 	useState,
 	useContext,
