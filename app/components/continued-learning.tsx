@@ -63,7 +63,7 @@ let accordionItems = [
 	<section className="relative text-center md:text-left bg-gray-100">
 		<h2 className="font-bold text-4xl">Continued Learning</h2>
 			<hr />
-		<p>Here are some topics and technologies that I'm excited to learn more about!</p>
+		<p>Here are some topics and technologies that I&apos;m excited to learn more about!</p>
 			<br/>
 		<div>
 			{accordionItems.map((item, index) => (
