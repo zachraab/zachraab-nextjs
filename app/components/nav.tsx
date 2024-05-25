@@ -9,30 +9,31 @@ import { useIsClient } from './is-client-ctx';
 
 export default function Nav() {
 	const isClient = useIsClient();
-	// const [windowSize, setWindowSize] = useState(getWindowSize());
+	const [windowSize, setWindowSize] = useState<any>(800);
 	
-	function getWindowSize() {
-		// if (isClient) {
-			// const {innerWidth} = window;
-			// return {innerWidth};
-		// }
-	}
-
 	useEffect(() => {
+		function getWindowSize() {
+			// if (isClient) {
+				const {innerWidth} = window;
+				return {innerWidth};
+			// }
+		}
+		setWindowSize(getWindowSize())
+
 		function handleWindowResize() {
-			// setWindowSize(getWindowSize() );
+			setWindowSize(getWindowSize() );
 		}
 	
-		// window.addEventListener('resize', handleWindowResize);
+		window.addEventListener('resize', handleWindowResize);
 	
-		// return () => {
-		// 	window.removeEventListener('resize', handleWindowResize);
-		// };
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
 	}, []);
 
 	return (
 		<> 
-			{/* {windowSize.innerWidth > 767 ? <DesktopNav /> : <MobileNav />} */}
+			{windowSize?.innerWidth < 768 ? <MobileNav /> : <DesktopNav />}
 		</>
 	)
 }

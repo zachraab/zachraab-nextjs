@@ -53,17 +53,25 @@ const handleChange =
 	};
 
 let accordionItems = [
-	{ summary: 'GSAP', details: 'GSAP seems like a lot of fun, I really enjoy the creative potential it gives to the developer.' },
-	{ summary: 'Parallax', details: <a className="font-bold hover:underline" href="https://dixonandmoe.com/rellax/">Click here!</a> },
-	{ summary: 'Physics based interactive designs', details: 'Websites have a lot of opportunity for exciting UI interaction that resemble a movie or a video game. I love that the user can explore the website in whatever way suits them!' },
-	{ summary: 'The Canvas Element!', details: <a className="font-bold hover:underline" href="https://dev.to/uuuuuulala/coding-an-interactive-and-damn-satisfying-cursor-7-simple-steps-2kb-of-code-1c8b">idea</a> },
+	{ 
+		summary: 'React Fundamentals', 
+		details: 'As an aspiring junior developer in the field, my primary goal is to master the fundamental building blocks of development and React. Regardless of complexity, any problem can be deconstructed into smaller, more manageable components. By employing best practices, I can navigate even the most intricate challenges with ease.'
+	},
+	{ 
+		summary: 'Next.js', 
+		details: 'So far, this framework significantly boosted my react development progress, and I am eager to explore it further.' 
+	},
+	{ 
+		summary: 'Interactive UI', 
+		details: 'Websites have a lot of opportunity for exciting UI interaction. I love that the user can explore the website in whatever way suits them! Incorporating dynamic tools like GSAP and Parallax make the experience feel more meaningful.' 
+	},
 ]
 
   return (
 	<section className="relative text-center md:text-left bg-gray-100">
 		<h2 className="font-bold text-4xl">Continued Learning</h2>
 			<hr />
-		<p>Here are some topics and technologies that I&apos;m excited to learn more about!</p>
+		<p>I am enthusiastic about delving into these topics and technologies to expand my knowledge!</p>
 			<br/>
 		<div>
 			{accordionItems.map((item, index) => (
@@ -72,9 +80,11 @@ let accordionItems = [
 						<Typography>{item.summary}</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<Typography>
-							{item.details}
-						</Typography>
+						<div className='m-auto py-8 w-3/4'>
+							<Typography>
+								{item.details}
+							</Typography>
+						</div>
 					</AccordionDetails>
 				</Accordion>
 			))}
