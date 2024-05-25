@@ -23,7 +23,7 @@ export default function Resume() {
 						<h1 data-aos="fade-right" className="font-bold text-4xl">Zach Raab</h1>
 						<h2 data-aos="fade-left" >Full-Stack Developer</h2>
 						<hr/>
-						<p data-aos="fade-in" >Seeking a junior React developer role where I can leverage my skills to contribute to the creation of dynamic web applications, websites, and software. I am eager to join a company that fosters a culture of continuous learning, personal growth, and advancement opportunities.</p>
+						<p data-aos="fade-in" >Seeking a developer role where I can leverage my skills to contribute to the creation of dynamic web applications, websites, and software. I am eager to join a company that fosters a culture of personal growth</p>
 					</div>
 				</div>
 				<div className="mb-4 tech-skills">
