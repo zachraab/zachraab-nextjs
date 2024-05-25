@@ -58,7 +58,7 @@ export default function Resume() {
 							<li data-aos="fade-in">Provided clients with detailed quality assurance for their websites, ensuring optimal performance.</li>
 							<li data-aos="fade-in">Maintained websites by regularly updating plugins and WordPress versions to guarantee security and functionality.</li>
 							<li data-aos="fade-in">Identified and resolved bugs to enhance user experience and site performance.</li>
-							<li data-aos="fade-in">Implemented new desired features to meet clients' evolving needs and preferences.</li>
+							<li data-aos="fade-in">Implemented new desired features to meet clients&apos; evolving needs and preferences.</li>
 						</ul>
 					</div>
 					<div className="">
