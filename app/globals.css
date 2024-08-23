@@ -46,6 +46,10 @@
 			padding-top: 0rem;
 		}
 
+		.main-content.resume ul{
+			margin-bottom: 0;
+		}
+
 		img {
 			max-height: 200px;
 		}

@@ -2,7 +2,7 @@ import Nav from "../components/nav"
 import Image from "next/image";
 
 export default function Resume() {
-	let skillsArray = ['JavaScript', 'CSS3', 'HTML5', 'SASS', 'PHP', 'jQuery', 'Bootstrap', 'Tailwind', 'React', 'Next.js', 'Express', 'MySQL', 'MongoDB', 'Node.js', "WordPress"];
+	let skillsArray = ['JavaScript', 'Next.js', 'MySQL', 'MongoDB', 'Node.js', 'PHP', 'React', 'WordPress', 'CSS3', 'HTML5', 'SASS', 'jQuery', 'Bootstrap', 'Tailwind', 'Express'];
 
 	return (
 		<>
@@ -23,7 +23,7 @@ export default function Resume() {
 						<h1 data-aos="fade-right" className="font-bold text-4xl">Zach Raab</h1>
 						<h2 data-aos="fade-left" >Full-Stack Developer</h2>
 						<hr/>
-						<p data-aos="fade-in" >Seeking a developer role where I can leverage my skills to contribute to the creation of dynamic web applications, websites, and software. I am eager to join a company that fosters a culture of personal growth</p>
+						<p data-aos="fade-in" >I am a junior developer with a background in ballroom dancing and music, providing me a unique and creative perspective to approach technical problems. In my last role, I developed WordPress websites using JavaScript and PHP. I am interested in pursuing a role in application development.</p>
 					</div>
 				</div>
 				<div className="mb-4 tech-skills">
@@ -55,9 +55,8 @@ export default function Resume() {
 						</h3>
 						<ul className="list-disc list-inside ml-8 mb-4">
 							<li data-aos="fade-in">Contract web developer work for creative and web dev agencies, focusing mostly on wordpress developement.</li>
-							<li data-aos="fade-in">Provided clients with detailed quality assurance for their websites, ensuring optimal performance.</li>
+							<li data-aos="fade-in">Provided clients with detailed quality assurance for their websites, ensuring optimal performance. Communicated existing bugs and recommended solutions.</li>
 							<li data-aos="fade-in">Maintained websites by regularly updating plugins and WordPress versions to guarantee security and functionality.</li>
-							<li data-aos="fade-in">Identified and resolved bugs to enhance user experience and site performance.</li>
 							<li data-aos="fade-in">Implemented new desired features to meet clients&apos; evolving needs and preferences.</li>
 						</ul>
 					</div>
@@ -70,17 +69,18 @@ export default function Resume() {
 						</h3>
 						<ul className="list-disc list-inside ml-8 mb-4">
 							{/* Reference Inflow, Sycle, Western */}
-							<li data-aos="fade-in">Translated custom designs into functional, responsive, cross-browser compatible web experiences within
-							WordPress and other CMS platforms.</li>
 							<li data-aos="fade-in">Collaborated with project team and delivered high quality products under budgeted hours.</li>
+							<li data-aos="fade-in">Worked in development cycle where team is rebasing/merging branches frequently. Made continuous deployments of code between development, staging,
+							and production environments.</li>
+							<li data-aos="fade-in">Participated in code reviews to instill the highest of code quality, ensure best practices, and continuous
+							improvement of the team with thorough testing.</li>
+							<li data-aos="fade-in">Attended daily meetings with team to provide updates and forecast future features.</li>
 							<li data-aos="fade-in">Built flexible, scalable, and maintainable websites and solutions that are efficient and minimize the time required
 							to bugfix or introduce new features.</li>
 							<li data-aos="fade-in">Provided strategic insights and reviews of design solutions prior to development resulting in more performant
 							products and better user experience.</li>
-							<li data-aos="fade-in">Handled version control (Git) and continuous integration deployments of code between development, staging,
-							and production environments.</li>
-							<li data-aos="fade-in">Participated in code reviews to instill the highest of code quality, ensure best practices, and continuous
-							improvement of the team with thorough testing.</li>
+							<li data-aos="fade-in">Translated custom designs into functional, responsive, cross-browser compatible web experiences within
+							WordPress and other CMS platforms.</li>
 						</ul>
 					</div>
 				</div>
