@@ -23,7 +23,7 @@ export default function Resume() {
 						<h1 data-aos="fade-right" className="font-bold text-4xl">Zach Raab</h1>
 						<h2 data-aos="fade-left" >Full-Stack Developer</h2>
 						<hr/>
-						<p data-aos="fade-in" >I am a junior developer with a background in ballroom dancing and music, providing me a unique and creative perspective to approach technical problems. In my last role, I developed WordPress websites using JavaScript and PHP. I am interested in pursuing a role in application development.</p>
+						<p data-aos="fade-in" >I am a junior developer with a background in ballroom dancing and music, providing me a unique and creative perspective to approach technical problems. In my last role as a front-end developer, I worked on custom WordPress websites using SASS, JavaScript and PHP.</p>
 					</div>
 				</div>
 				<div className="mb-4 tech-skills">
