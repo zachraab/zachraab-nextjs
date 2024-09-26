@@ -54,10 +54,10 @@ export default function Resume() {
 							<span className="w-1/2 md:w-1/4">2022 - Present</span>
 						</h3>
 						<ul className="list-disc list-inside ml-8 mb-4">
-							<li data-aos="fade-in">Contract web developer work for creative and web dev agencies, focusing mostly on wordpress developement.</li>
+							<li data-aos="fade-in">Contract web developer work for creative and web dev agencies, focusing mostly on WordPress development.</li>
 							<li data-aos="fade-in">Provided clients with detailed quality assurance for their websites, ensuring optimal performance. Communicated existing bugs and recommended solutions.</li>
 							<li data-aos="fade-in">Maintained websites by regularly updating plugins and WordPress versions to guarantee security and functionality.</li>
-							<li data-aos="fade-in">Implemented new desired features to meet clients&apos; evolving needs and preferences.</li>
+							<li data-aos="fade-in">Implemented new desired features to meet clients evolving needs and preferences.</li>
 						</ul>
 					</div>
 					<div className="">
@@ -76,7 +76,7 @@ export default function Resume() {
 							improvement of the team with thorough testing.</li>
 							<li data-aos="fade-in">Attended daily meetings with team to provide updates and forecast future features.</li>
 							<li data-aos="fade-in">Built flexible, scalable, and maintainable websites and solutions that are efficient and minimize the time required
-							to bugfix or introduce new features.</li>
+							to troubleshoot or introduce new features.</li>
 							<li data-aos="fade-in">Provided strategic insights and reviews of design solutions prior to development resulting in more performant
 							products and better user experience.</li>
 							<li data-aos="fade-in">Translated custom designs into functional, responsive, cross-browser compatible web experiences within
