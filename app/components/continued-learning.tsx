@@ -73,7 +73,7 @@ let accordionItems = [
 			<hr />
 		<p>I am enthusiastic about delving into these topics and technologies to expand my knowledge!</p>
 			<br/>
-		<div>
+		<div className='lg:w-3/4 xl:w-1/2'>
 			{accordionItems.map((item, index) => (
 				<Accordion key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
 					<AccordionSummary aria-controls={`panel${index}d-content`} id={`panel${index}d-header`}>
