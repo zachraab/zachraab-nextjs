@@ -50,10 +50,6 @@
 			margin-bottom: 0;
 		}
 
-		img {
-			max-height: 200px;
-		}
-
 		h3 {
 			width: 100% !important;
 			print-color-adjust: exact; 
