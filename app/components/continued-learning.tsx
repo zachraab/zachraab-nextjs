@@ -54,12 +54,12 @@ const handleChange =
 
 let accordionItems = [
 	{ 
-		summary: 'React Fundamentals', 
-		details: 'As an aspiring developer in the field, my primary goal is to master the fundamental building blocks of development and React. Regardless of complexity, any problem can be deconstructed into smaller, more manageable components. By employing best practices, I can navigate even the most intricate challenges with ease.'
+		summary: 'React', 
+		details: 'As a developer in the field, my primary goal is to master the fundamental building blocks of development in React. Regardless of complexity, any problem can be deconstructed into smaller, more manageable components. By employing best practices, I can navigate even the most intricate challenges with ease.'
 	},
 	{ 
 		summary: 'Next.js', 
-		details: 'So far, this framework significantly boosted my react development progress, and I am eager to explore it further.' 
+		details: 'So far, this framework has significantly boosted my react development progress, and I am eager to explore it further.' 
 	},
 	{ 
 		summary: 'Interactive UI', 
