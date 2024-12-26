@@ -80,7 +80,7 @@ let accordionItems = [
 					<AccordionDetails>
 						<div className='m-auto py-8 w-3/4'>
 							<Typography>
-								{item.details.split(', ').map( list => <li>{list}</li> )}
+								{item.details.split(', ').map( (list, index) => <li key={list + index}>{list}</li> )}
 							</Typography>
 						</div>
 					</AccordionDetails>
