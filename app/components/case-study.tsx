@@ -2,14 +2,14 @@
 import Image from 'next/image'
 import { Modal, ModalContents, ModalOpenButton } from "./case-modal";
 
-export default function CaseStudy({ darkMode, bgColor, name, url, img, description }: any) {
+export default function CaseStudy({ darkMode, bgColor, name, url, img, description, credit }: any) {
 	bgColor = bgColor ? bgColor : 'white';
 
 	return (
 		<>
 			<Modal>
 				<ModalOpenButton>
-					<button data-aos="fade-in" className="flex justify-center items-center h-48 w-full md:w-1/3 border border-gray-300 hover:border-gray-500">
+					<button data-aos="fade-in" className="flex justify-center items-center h-48 w-full md:w-1/2 border border-gray-300 hover:border-gray-500 hover:bg-gray-100">
 						<div className="relative inline-block text-left w-fit before:ease before:duration-300 before:bg-gray-300 before:absolute before:left-0 before:bottom-0 before:translate-x-1/4 before:h-1/4 before:w-0 before:transform before:-skew-y-12 hover:before:w-full active:before:bg-gray-600 mb-5 md:mb-3 md:text-base">
 								<span className='relative text-2xl'>{name}</span>
 						</div>
@@ -40,7 +40,7 @@ export default function CaseStudy({ darkMode, bgColor, name, url, img, descripti
 								<hr className="md:w-2/3"/>
 							<p>{description}</p>
 							<br/>
-							<p className='text-xs'>Credit: Blennd</p>
+							<p className='text-xs'>Credit: {credit}</p>
 						</div>
 					</div>
 				</ModalContents>
