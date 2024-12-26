@@ -44,7 +44,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 	borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
-export default function ContinuedLearning() {
+export default function SkillsAccordion() {
 	const [expanded, setExpanded] = useState<string | false>();
 
 const handleChange =
@@ -54,25 +54,23 @@ const handleChange =
 
 let accordionItems = [
 	{ 
-		summary: 'React', 
-		details: 'As a developer in the field, my primary goal is to master the fundamental building blocks of development in React. Regardless of complexity, any problem can be deconstructed into smaller, more manageable components. By employing best practices, I can navigate even the most intricate challenges with ease.'
+		summary: 'Frontend Development', 
+		details: 'HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Boostrap'
 	},
 	{ 
-		summary: 'Next.js', 
-		details: 'So far, this framework has significantly boosted my react development progress, and I am eager to explore it further.' 
+		summary: 'Backend Development', 
+		details: 'Node.js, Express.js, PHP, APIs, MySQL, MongoDB' 
 	},
 	{ 
-		summary: 'Interactive UI', 
-		details: 'Websites have a lot of opportunity for exciting UI interaction. I love that the user can explore the website in whatever way suits them! Incorporating dynamic tools like GSAP and Parallax make the experience feel more meaningful.' 
+		summary: 'Tools and Platforms', 
+		details: 'Git, Docker, Postman, CI/CD, SFTP, WordPress, Vercel' 
 	},
 ]
 
   return (
 	<section className="relative text-center md:text-left bg-gray-100">
-		<h2 className="font-bold text-4xl">Continued Learning</h2>
+		<h2 className="font-bold text-4xl">Skills</h2>
 			<hr />
-		<p>I am enthusiastic about delving into these topics and technologies to expand my knowledge!</p>
-			<br/>
 		<div className='lg:w-3/4 xl:w-1/2'>
 			{accordionItems.map((item, index) => (
 				<Accordion key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
@@ -82,7 +80,7 @@ let accordionItems = [
 					<AccordionDetails>
 						<div className='m-auto py-8 w-3/4'>
 							<Typography>
-								{item.details}
+								{item.details.split(', ').map( list => <li>{list}</li> )}
 							</Typography>
 						</div>
 					</AccordionDetails>

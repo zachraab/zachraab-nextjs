@@ -2,7 +2,7 @@ import Nav from "./components/nav";
 import HeroHome from "./components/hero-home"
 import AboutMe from "./components/about-me";
 import CaseStudies from "./components/case-studies";
-import ContinuedLearning from "./components/continued-learning"
+import SkillsAccordion from "./components/skills-accordion"
 import ThreeImages from "./components/three-images";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
 				<HeroHome />
 				<AboutMe />
 				<CaseStudies />
-				<ContinuedLearning />
+				<SkillsAccordion />
 				<ThreeImages />
 			</div>
 		</>
