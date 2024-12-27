@@ -55,15 +55,15 @@ const handleChange =
 let accordionItems = [
 	{ 
 		summary: 'Frontend Development', 
-		details: 'HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Boostrap'
+		details: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js', 'Tailwind CSS', 'Boostrap']
 	},
 	{ 
 		summary: 'Backend Development', 
-		details: 'Node.js, Express.js, PHP, APIs, MySQL, MongoDB' 
+		details: ['Node.js', 'Express.js', 'PHP', 'APIs', 'MySQL', 'MongoDB'] 
 	},
 	{ 
 		summary: 'Tools and Platforms', 
-		details: 'Git, Docker, Postman, CI/CD, SFTP, WordPress, Vercel' 
+		details: ['Git', 'Docker', 'Postman', 'Implementing CI/CD Pipelines', 'SFTP', 'WordPress', 'Vercel'] 
 	},
 ]
 
@@ -79,9 +79,7 @@ let accordionItems = [
 					</AccordionSummary>
 					<AccordionDetails>
 						<div className='m-auto py-8 w-3/4'>
-							<Typography>
-								{item.details.split(', ').map( (list, index) => <li key={list + index}>{list}</li> )}
-							</Typography>
+							{item.details.map( (list, index) => <li key={list + index}>{list}</li> )}
 						</div>
 					</AccordionDetails>
 				</Accordion>
