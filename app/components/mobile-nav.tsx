@@ -24,6 +24,7 @@ export default function MobileNav() {
 
 	let pageItems = [
 		{ text: 'Home', route: '/' }, 
+		{ text: 'About', route: '/about' },
 		{ text: 'Resume', route: '/resume' }
 	];
 

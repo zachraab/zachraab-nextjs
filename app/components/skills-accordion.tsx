@@ -55,21 +55,25 @@ const handleChange =
 let accordionItems = [
 	{ 
 		summary: 'Frontend Development', 
-		details: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js', 'Tailwind CSS', 'Boostrap']
+		details: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js', 'Tailwind CSS', 'Boostrap', 'jQuery', 'SASS']
 	},
 	{ 
 		summary: 'Backend Development', 
 		details: ['Node.js', 'Express.js', 'PHP', 'APIs', 'MySQL', 'MongoDB'] 
 	},
 	{ 
+		summary: 'Programming Concepts', 
+		details: ['Agile Methodologies', 'Implementing CI/CD Pipelines', 'OOP (Object-Oriented Programming)', 'Version Control', 'Test-Driven Development', 'Mobile-First'] 
+	},
+	{ 
 		summary: 'Tools and Platforms', 
-		details: ['Git', 'Docker', 'Postman', 'Implementing CI/CD Pipelines', 'SFTP', 'WordPress', 'Vercel'] 
+		details: ['Git', 'WordPress', 'Vercel'] 
 	},
 ]
 
   return (
-	<section className="relative text-center md:text-left bg-gray-100">
-		<h2 className="font-bold text-4xl">Skills</h2>
+	<section className="relative bg-gray-100">
+		<h2 className="font-bold text-4xl text-center md:text-left">Skills</h2>
 			<hr />
 		<div className='lg:w-3/4 xl:w-1/2'>
 			{accordionItems.map((item, index) => (
@@ -78,9 +82,9 @@ let accordionItems = [
 						<Typography>{item.summary}</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<div className='m-auto py-8 w-3/4'>
+						<ul className="py-8 list-disc list-inside ml-8 mb-4">
 							{item.details.map( (list, index) => <li key={list + index}>{list}</li> )}
-						</div>
+						</ul>
 					</AccordionDetails>
 				</Accordion>
 			))}

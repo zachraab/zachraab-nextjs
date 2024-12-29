@@ -9,11 +9,11 @@ export default function Resume() {
 
 			<div className="main-content resume">
 				<div className="mb-4 flex flex-col sm:flex-row sm:space-x-8">
-					<div className="sm:basis-2/3 xl:basis-1/2 flex flex-col justify-center">
+					<div className="flex flex-col justify-center">
 						<h1 data-aos="fade-right" className="font-bold text-4xl">Full-Stack Developer</h1>
 						<h2 data-aos="fade-left" >zpraab@gmail.com</h2>
 						<hr/>
-						<p data-aos="fade-in" className="indent-8">Dynamic Full Stack Developer with expertise in crafting responsive web solutions using SASS, JavaScript, and PHP. Leverages a distinctive background as a professional musician and dancer to combine artistic sensibility with technical proficiency to create elegant user experiences and efficient backend architectures. Experienced in optimizing application performance, implementing responsive design patterns, and collaborating with cross-functional teams to meet project objectives.</p>
+						<p data-aos="fade-in" className="indent-8">Dynamic Full Stack Developer with expertise in crafting responsive web solutions using JavaScript, and PHP. Leverages a distinctive background as a professional musician and dancer to combine artistic sensibility with technical proficiency to create elegant user experiences and efficient backend architectures. Experienced in optimizing application performance, implementing responsive design patterns, and collaborating with cross-functional teams to meet project objectives.</p>
 					</div>
 				</div>
 				<div className="mb-4 tech-skills">
