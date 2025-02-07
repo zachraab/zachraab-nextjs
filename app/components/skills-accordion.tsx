@@ -1,4 +1,6 @@
 'use client';
+import Skill from './skill';
+import {logos, accordionItems} from './skills-accordion-data';
 import { useState } from 'react';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -52,39 +54,24 @@ const handleChange =
 		setExpanded(newExpanded ? panel : false);
 	};
 
-let accordionItems = [
-	{ 
-		summary: 'Frontend Development', 
-		details: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Next.js', 'Tailwind CSS', 'Boostrap', 'jQuery', 'SASS']
-	},
-	{ 
-		summary: 'Backend Development', 
-		details: ['Node.js', 'Express.js', 'PHP', 'APIs', 'MySQL', 'MongoDB'] 
-	},
-	{ 
-		summary: 'Programming Concepts', 
-		details: ['Agile Methodologies', 'Implementing CI/CD Pipelines', 'OOP (Object-Oriented Programming)', 'Version Control', 'Test-Driven Development', 'Mobile-First'] 
-	},
-	{ 
-		summary: 'Tools and Platforms', 
-		details: ['Git', 'WordPress', 'Vercel'] 
-	},
-]
-
   return (
 	<section className="relative bg-gray-100">
-		<h2 className="font-bold text-4xl text-center md:text-left">Skills</h2>
+		<h2 data-aos="fade-left" className="font-bold text-4xl text-center md:text-left">Technology</h2>
 			<hr />
-		<div className='lg:w-3/4 xl:w-1/2'>
+		<div data-aos="fade-in">
 			{accordionItems.map((item, index) => (
-				<Accordion key={index} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
+				<Accordion key={`accordion-${index}`} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>
 					<AccordionSummary aria-controls={`panel${index}d-content`} id={`panel${index}d-header`}>
 						<Typography>{item.summary}</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
-						<ul className="py-8 list-disc list-inside ml-8 mb-4">
-							{item.details.map( (list, index) => <li key={list + index}>{list}</li> )}
-						</ul>
+						<div className='flex flex-wrap justify-center'>
+							{logos.map((logo: any, index: number) => ( 
+								( logo.type === item.summary.toLowerCase()) ? (
+									<Skill key={`skill-${index}`} source={logo.source} name={logo.name} mode={logo.mode}/>
+								) : null
+							))}
+						</div>
 					</AccordionDetails>
 				</Accordion>
 			))}
