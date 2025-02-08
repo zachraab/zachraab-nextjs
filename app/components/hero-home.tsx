@@ -22,7 +22,7 @@ export default function HeroHome() {
 				<div className="w-full xl:w-1/2">
 					<h1 data-aos="fade-in" className="font-bold text-4xl">Hi I&apos;m Zach!</h1>
 						<hr/>
-					<p data-aos="fade-in" className="text-lg bg-gray-100 rounded-xl p-4">Dynamic Full Stack Developer with expertise in crafting responsive web solutions using JavaScript, and PHP</p>
+					<p data-aos="fade-in" className="text-lg bg-gray-100 rounded-xl p-4">Dynamic Full Stack Developer with expertise in crafting responsive web solutions using JavaScript, Elixir and PHP</p>
 						<br/>
 					<p data-aos="fade-in"  data-aos-delay="100">Feel free to browse through my portfolio to see some of the projects I’ve worked on!</p>
 						<br/>
