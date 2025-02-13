@@ -3,7 +3,7 @@
 import {useEffect, useState} from 'react';
 import DesktopNav from './desktop-nav'
 import MobileNav from './mobile-nav'
-import { useIsClient } from './is-client-ctx';
+import { useIsClient } from '../is-client-ctx';
 
 // credit: https://bobbyhadz.com/blog/react-get-window-width-height
 

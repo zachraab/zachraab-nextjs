@@ -1,6 +1,6 @@
-import Nav from "./components/nav";
-import HeroHome from "./components/hero-home";
-import SkillsAccordion from "./components/skills-accordion";
+import Nav from "./components/nav/nav";
+import HeroHome from "./components/hero/hero-home";
+import SkillsAccordion from "./components/accordion/skills-accordion";
 import ThreeImages from "./components/three-images";
 
 export default function Home() {

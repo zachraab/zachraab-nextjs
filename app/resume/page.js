@@ -1,4 +1,4 @@
-import Nav from "../components/nav"
+import Nav from "../components/nav/nav"
 
 export default function Resume() {
 	let skillsArray = ['JavaScript', 'Elixir', 'Phoenix', 'Next.js', 'MySQL', 'PostgreSQL', 'MongoDB', 'Express', 'RESTful APIs', 'Node.js', 'PHP', 'React', 'WordPress', 'CSS3', 'HTML5', 'SASS', 'jQuery', 'Bootstrap', 'Tailwind'];

@@ -1,4 +1,4 @@
-import renderLogo from '../../public/Render logo - Black.svg';
+import renderLogo from '../../../public/Render logo - Black.svg';
 
 export const accordionItems = [
 	{ summary: 'Frontend' },

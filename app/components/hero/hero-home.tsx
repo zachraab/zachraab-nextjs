@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from "next/link";
-import hikingImage from "../../public/IMG_0999.jpg"
+import hikingImage from "../../../public/IMG_0999.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineSend } from "react-icons/ai";
 

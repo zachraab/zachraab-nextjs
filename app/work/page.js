@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Nav from "../components/nav";
-import HeroInternal from "../components/hero-internal";
-import CaseStudies from "../components/case-studies";
+import Nav from "../components/nav/nav";
+import HeroInternal from "../components/hero/hero-internal";
+import CaseStudies from "../components/case-studies/case-studies";
 import ThreeImages from "../components/three-images";
 
 export default function About() {

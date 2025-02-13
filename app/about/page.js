@@ -1,6 +1,6 @@
 import headshotImage from "../../public/DSC_1344.jpg";
-import Nav from "../components/nav";
-import HeroInternal from "../components/hero-internal"
+import Nav from "../components/nav/nav";
+import HeroInternal from "../components/hero/hero-internal"
 import AboutMe from "../components/about-me";
 import ThreeImages from "../components/three-images";
 
