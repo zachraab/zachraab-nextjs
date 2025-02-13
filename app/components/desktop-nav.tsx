@@ -18,6 +18,11 @@ export default function DesktopNav() {
 						</Link>
 						<Link 
 						className="px-6 py-4 text-2xl text-center border border-black active:bg-black active:text-white shadow-2xl overflow-hidden relative border border-black before:bg-black hover:before:animate-spin active:before:bg-white before:mt-8 before:border-2 before:border-black before:absolute before:left-0 before:-ml-4 before:h-56 before:w-56 before:origin-top-right before:-translate-x-full before:-rotate-90"
+						href="/work">
+							Work
+						</Link>
+						<Link 
+						className="px-6 py-4 text-2xl text-center border border-black active:bg-black active:text-white shadow-2xl overflow-hidden relative border border-black before:bg-black hover:before:animate-spin active:before:bg-white before:mt-8 before:border-2 before:border-black before:absolute before:left-0 before:-ml-4 before:h-56 before:w-56 before:origin-top-right before:-translate-x-full before:-rotate-90"
 						href="/resume">
 							Resume
 						</Link>

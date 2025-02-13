@@ -33,7 +33,7 @@ export default function Nav() {
 
 	return (
 		<> 
-			{windowSize?.innerWidth < 768 ? <MobileNav /> : <DesktopNav />}
+			{windowSize?.innerWidth < 992 ? <MobileNav /> : <DesktopNav />}
 		</>
 	)
 }
