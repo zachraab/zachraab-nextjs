@@ -1,5 +1,6 @@
 'use client';
 import Skill from './skill';
+import Headline from '../headline';
 import {logos, accordionItems} from './skills-accordion-data';
 import { useState } from 'react';
 import { styled } from '@mui/material/styles';
@@ -56,8 +57,7 @@ const handleChange =
 
   return (
 	<section className="relative bg-gray-100">
-		<h2 data-aos="fade-left" className="font-bold text-4xl text-center md:text-left">Technology</h2>
-			<hr />
+		<Headline content="Technology" />
 		<div data-aos="fade-in">
 			{accordionItems.map((item, index) => (
 				<Accordion key={`accordion-${index}`} expanded={expanded === `panel${index}`} onChange={handleChange(`panel${index}`)}>

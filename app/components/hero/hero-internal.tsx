@@ -18,7 +18,7 @@ export default function HeroInternal({image, isPortraitImage, headline, descript
                 </div>
                 )}   
                 <div className={image ? 'w-full lg:w-1/2' : 'w-full'}>
-                    <h3 className='text-2xl font-bold' data-aos="fade-in">{headline}</h3>
+                    <h1 className='text-4xl font-bold' data-aos="fade-in">{headline}</h1>
                         <br/>
                     <p data-aos="fade-right">{description}</p>
                 </div>
