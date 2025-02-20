@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./styling/globals.css";
+import "./styling/embla.css";
 import { AOSInit } from './aos';
 import { IsClientCtxProvider } from '../app/components/is-client-ctx';
 

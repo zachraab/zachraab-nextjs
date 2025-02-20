@@ -33,7 +33,9 @@ export default function CaseStudy({ darkMode, bgColor, name, url, img, descripti
 								height='3024'
 							/>
 							<br/>
-							<a className="relative inline-block text-left w-fit before:-skew-x-12 before:-m-1 before:ease before:duration-300 before:bg-gray-300 before:absolute before:left-0 before:bottom-0 before:translate-x-1/4 before:h-1/4 before:w-0 hover:before:w-full active:before:bg-gray-600" href={url} target="_blank" rel='nofollow'><span className='relative'>Check it out!</span></a>
+							<a className="relative inline-block text-left w-fit before:-skew-x-12 before:-m-1 before:ease before:duration-300 before:bg-gray-300 before:absolute before:left-0 before:bottom-0 before:translate-x-1/4 before:h-1/4 before:w-0 hover:before:w-full active:before:bg-gray-400" href={url} target="_blank" rel='nofollow'>
+								<span className='relative'>Check it out!</span>
+							</a>
 						</div>
 						<div className="flex flex-col justify-center md:w-2/3">
 							<h3 className="font-bold text-xl">{name}</h3>
