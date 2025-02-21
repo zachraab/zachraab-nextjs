@@ -7,12 +7,9 @@ export default function Home() {
 	return (
 		<>
 			<Nav />
-
-			<div className="main-content">
-				<HeroHome />
-				<SkillsAccordion />
-				<ThreeImages />
-			</div>
+			<HeroHome />
+			<SkillsAccordion />
+			<ThreeImages />
 		</>
 	);
 }

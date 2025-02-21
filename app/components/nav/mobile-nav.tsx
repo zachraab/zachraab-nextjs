@@ -12,6 +12,8 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import WorkIcon from '@mui/icons-material/Work';
+import PersonIcon from '@mui/icons-material/Person';
 import MailIcon from '@mui/icons-material/Mail';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -43,7 +45,7 @@ export default function MobileNav() {
 						<ListItem key={item.text}>
 							<ListItemButton>
 								<ListItemIcon sx={{ color: 'black' }}>
-									{ index === 0 ? <HomeIcon /> : <TextSnippetIcon /> }
+									{ index === 0 ? <HomeIcon /> : index === 1 ? <PersonIcon /> : index === 2 ? <WorkIcon /> : index === 3 ? <TextSnippetIcon /> : null }
 								</ListItemIcon>
 								<ListItemText primary={item.text} />
 							</ListItemButton>

@@ -15,7 +15,6 @@ import Link from 'next/link'
 import { LiaArrowCircleRightSolid } from "react-icons/lia";
 import { LiaArrowCircleLeftSolid } from "react-icons/lia";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { Description } from '@mui/icons-material'
 
 const TWEEN_FACTOR_BASE = 0.52
 

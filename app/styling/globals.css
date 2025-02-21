@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-	.main-content {
-		padding-top: 4rem;
-		padding-bottom: 2rem;
-	}
-
 	.resume {
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+
+	section:first-of-type {
+		padding-top: 4rem;
 	}
 
 	section {
@@ -22,46 +21,12 @@
 	}
 
 	@media screen and (min-width: 992px) {
-		.main-content, .resume {
+		section:first-of-type {
 			padding-top: 8rem;
-			padding-bottom: 5rem;
-		}
-
-		.resume {
-			padding-left: 10rem;
-			padding-right: 10rem;
 		}
 
 		section {
 			padding: 10rem;
-		}
-	}
-
-	@media print {
-		.main-content {
-			padding: 3rem 0 0 0;
-		}
-
-		.main-content.resume {
-			padding-top: 0rem;
-		}
-
-		.main-content.resume ul{
-			margin-bottom: 0;
-		}
-
-		h3 {
-			width: 100% !important;
-			print-color-adjust: exact; 
-			-webkit-print-color-adjust: exact; 
-		}
-
-		h3 span {
-			width: 25% !important;
-		}
-
-		nav, footer, .tech-skills {
-			display: none;
 		}
 	}
 }

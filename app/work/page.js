@@ -10,16 +10,13 @@ export default function About() {
 	return (
 		<>
 			<Nav />
-
-			<div className="main-content">	
-				<HeroInternal 
-					headline="Showcasing My Journey: Personal Projects & Professional Work"
-					description="Here, you'll find a collection of personal projects that reflect my creativity and curiosity, alongside professional work that highlights my experience and dedication. Dive in and explore the work that defines me!"
-				/>
-				<FeaturedProjects />
-				<CaseStudies />
-				<ThreeImages />
-			</div>
+			<HeroInternal 
+				headline="Showcasing My Journey: Personal Projects & Professional Work"
+				description="Here, you'll find a collection of personal projects that reflect my creativity and curiosity, alongside professional work that highlights my experience and dedication. Dive in and explore the work that defines me!"
+			/>
+			<FeaturedProjects />
+			<CaseStudies />
+			<ThreeImages />
 		</>
 	)
 }

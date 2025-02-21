@@ -8,17 +8,14 @@ export default function About() {
 	return (
 		<>
 			<Nav />
-
-			<div className="main-content">	
-				<HeroInternal 
-					image={headshotImage} 
-					isPortraitImage={true}
-					headline="Collaborative. Focused. Resourceful."
-					description="With a keen eye for detail and a passion for code, I excel in driving projects forward with purpose and commitment."
-				/>
-				<AboutMe />
-				<ThreeImages />
-			</div>
+			<HeroInternal 
+				image={headshotImage} 
+				isPortraitImage={true}
+				headline="Collaborative. Focused. Resourceful."
+				description="With a keen eye for detail and a passion for code, I excel in driving projects forward with purpose and commitment."
+			/>
+			<AboutMe />
+			<ThreeImages />
 		</>
 	)
 }

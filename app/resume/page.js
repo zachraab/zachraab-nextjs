@@ -7,7 +7,7 @@ export default function Resume() {
 		<>
 			<Nav />
 
-			<div className="main-content resume">
+			<section>
 				<div className="mb-4 flex flex-col sm:flex-row sm:space-x-8">
 					<div className="flex flex-col justify-center">
 						<h1 data-aos="fade-right" className="font-bold text-4xl">Full-Stack Developer</h1>
@@ -67,7 +67,7 @@ export default function Resume() {
 					<p data-aos="fade-in">Bachelors Degree in Recording Engineering University of Denver</p>
 					<p data-aos="fade-in">6-Month Full-Time Bootcamp Certificate in Full Stack Web Development University of Denver</p>
 				</div>
-			</div>
+			</section>
 		</>
 	)
 }
