@@ -72,7 +72,7 @@ export default function MobileNav() {
 	);
 
 	return (
-		<nav className="z-10 fixed top-0 flex justify-end w-full bg-white">
+		<nav className="z-10 fixed top-0 flex justify-end w-full bg-white shadow-md">
 			<Button sx={{ color: 'black', height: 64 }} onClick={toggleDrawer(true)}><MenuIcon /></Button>
 			<Drawer open={open} onClose={toggleDrawer(false)}>
 				{DrawerList}

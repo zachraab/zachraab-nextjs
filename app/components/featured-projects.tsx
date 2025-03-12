@@ -32,8 +32,10 @@ export default function FeaturedProjects() {
     ]
 
     return (
-        <section className="bg-gray-100">
-            <Headline content="Featured Projects" />
+        <section className="bg-gray-100 md:px-0">
+            <div className="md:px-8 lg:px-40">
+                <Headline content="Featured Projects" />
+            </div>
 
             <EmblaCarousel slides={projects} options={OPTIONS} />
         </section>

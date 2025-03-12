@@ -148,7 +148,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 <div className={`absolute bottom-0 ${ techVisibile[index] ? 'right-0' : '-right-full'} w-[200%] flex justify-between items-center h-3/4 bg-zinc-200 p-8 transform duration-300 ease-out ${visibleSlides[index] ? 'translate-y-0' : 'translate-y-full'}`}>
                   <p className="w-1/2 pr-8 mb-4">{description}</p>
                   <button onClick={() => toggleTechInfo(index)} className={`absolute top-2 text-3xl transform duration-300 rounded-full ${techVisibile[index] ? 'left-[50%] translate-x-2 hover:translate-x-1' : 'right-[50%] -translate-x-2 hover:-translate-x-1'}`}>{techVisibile[index] ? <LiaArrowCircleLeftSolid /> : <LiaArrowCircleRightSolid />}</button>
-                  <p className="w-1/2 pl-8">{tech}</p>
+                  <p className="w-1/2 pl-8">Technology: {tech}</p>
                 </div>
               </div>
             </div>
@@ -156,7 +156,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
 
-      <div className="embla__controls">
+      <div className="embla__controls md:px-8 lg:px-40">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />

@@ -26,8 +26,8 @@ export default function HeroHome() {
 				<p data-aos="fade-in"  data-aos-delay="100">Feel free to browse through my portfolio to see some of the projects I’ve worked on!</p>
 					<br/>
 				<div className="flex items-center justify-center space-x-8 pb-4">
-					<Link data-aos="fade-up" className=" overflow-hidden text-center text-xl h-12 w-40 before:ease relative border border-black shadow-2xl before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-gray-900 before:transition-all before:duration-300 hover:text-white hover:shadow-black hover:before:-rotate-180" href="mailto:zpraab@gmail.com">
-						<AiOutlineSend className="relative inline-block mr-2" /><span className="leading-12 relative z-1 w-full h-full">Email Me</span>
+					<Link data-aos="fade-up" className=" overflow-hidden text-center text-xl h-12 w-40 before:ease relative border border-black before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-gray-900 before:transition-all before:duration-300 hover:text-white hover:before:-rotate-180" href="mailto:zpraab@gmail.com">
+						<AiOutlineSend className="relative inline-block mr-2" /><span className="text-sm md:text-[1.25rem] leading-12 relative z-1 w-full h-full">Email Me</span>
 					</Link>
 					<Link data-aos="fade-up" data-aos-delay="100" className="flex items-center text-3xl p-2 before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-32 before:-rotate-90 before:bg-gray-900 before:transition-all before:duration-300 hover:text-white hover:before:-rotate-180 relative overflow-hidden" href="https://github.com/zachraab" rel="nofollow" target="_blank">
 						<FaGithub className="inline-block relative" />
