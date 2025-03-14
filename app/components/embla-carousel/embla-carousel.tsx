@@ -134,22 +134,33 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   };
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
+    <div className="embla relative">
+      <div className="embla__viewport relative" ref={emblaRef}>
         <div className="embla__container">
           {slides.map(({title, tech, description, url}, index) => (
             <div className="embla__slide" key={index}>
               <div className="embla__slide__number p-5 text-center relative overflow-hidden">
-                <p className="absolute top-4 right-4">#{index + 1}</p>
-                <Link target="_blank" href={url} className="relative flex gap-4 items-center font-bold text-3xl sm:text-4xl before:-skew-x-12 before:z-[-1] before:-m-1 before:ease before:duration-300 before:bg-gray-300 before:absolute before:left-0 before:-bottom-1 before:translate-x-1/4 before:h-1/4 before:w-0 hover:before:w-3/4 active:before:bg-gray-400">
+                <Link target="_blank" href={url} className={`${visibleSlides[index] ? 'opacity-0 duration-100 ' : 'opacity-100 duration-300 '}transition ease-in relative flex gap-4 items-center font-bold text-3xl sm:text-4xl before:-skew-x-12 before:z-[-1] before:-m-1 before:ease before:duration-300 before:bg-white before:absolute before:left-0 before:-bottom-1 before:translate-x-1/4 before:h-1/4 before:w-0 hover:before:w-3/4 active:before:bg-gray-300`}>
                   {title} <FaExternalLinkAlt className="text-xl"/>
                 </Link>
-                <button onClick={() => toggleVisibility(index)} className="absolute top-4 left-4 border-4 border-zinc-200 px-4 py-2 rounded-xl hover:bg-zinc-200 active:bg-zinc-300 active:border-zinc-300">{visibleSlides[index] ? 'Less Info' : 'More Info'}</button>
-                <div className={`absolute bottom-0 ${ techVisibile[index] ? 'right-0' : '-right-full'} w-[200%] flex justify-between items-center h-3/4 bg-zinc-200 p-8 transform duration-300 ease-out ${visibleSlides[index] ? 'translate-y-0' : 'translate-y-full'}`}>
-                  <p className="w-1/2 pr-8 mb-4">{description}</p>
-                  <button onClick={() => toggleTechInfo(index)} className={`absolute top-2 text-3xl transform duration-300 rounded-full ${techVisibile[index] ? 'left-[50%] translate-x-2 hover:translate-x-1' : 'right-[50%] -translate-x-2 hover:-translate-x-1'}`}>{techVisibile[index] ? <LiaArrowCircleLeftSolid /> : <LiaArrowCircleRightSolid />}</button>
-                  <p className="w-1/2 pl-8">Technology: {tech}</p>
+
+                <div className={`echo absolute bottom-0 ${ techVisibile[index] ? 'right-0' : '-right-full'} w-[200%] flex justify-between items-end h-full p-8 transform duration-300 ease-out ${visibleSlides[index] ? 'translate-y-0' : 'translate-y-full'}`}>
+                  <div className="w-1/2 pr-8">
+                    <div className="w-full md:w-1/2 mx-auto">
+                    <p className="font-bold">Description:</p>
+                    <p className="">{description}</p>
+                    </div>
+                  </div>
+                  <button onClick={() => toggleTechInfo(index)} className={`absolute bottom-2 text-3xl transform duration-300 rounded-full ${techVisibile[index] ? 'left-[50%] translate-x-2 hover:translate-x-1' : 'right-[50%] -translate-x-2 hover:-translate-x-1'}`}>{techVisibile[index] ? <LiaArrowCircleLeftSolid /> : <LiaArrowCircleRightSolid />}</button>
+                  <div className="w-1/2 pl-8">
+                    <div className="w-full md:w-1/2 mx-auto">
+                      <p className="font-bold">Technology:</p>
+                      <p className="">{tech}</p>
+                    </div>
+                  </div>
                 </div>
+                <button onClick={() => toggleVisibility(index)} className="absolute top-10 left-10 border-4 border-white px-4 py-2 rounded-xl font-bold hover:bg-white hover:text-gray-500 active:text-gray-500 active:bg-zinc-200 active:border-zinc-200">{visibleSlides[index] ? 'Less Info' : 'More Info'}</button>
+                <p className="absolute top-10 right-10 font-bold">#{index + 1}</p>
               </div>
             </div>
           ))}

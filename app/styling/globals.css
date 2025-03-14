@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-
-	section:first-of-type {
-		padding-top: 4rem;
+	section {
+		position: relative;
+		padding: 10rem 2rem;
 	}
 
-	section {
-		padding: 10rem 2rem;
+	/* Target first component of each page */
+	nav + *:not(.echo-container) {
+		padding-top: 6rem;
 	}
 	  
 	hr {
@@ -30,44 +31,37 @@
 		background-image: url('../../public/wave.svg');
 	}
 
-	.echo-container {
+	#blob {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+	}
+
+	.gradient-container {
 		position: relative;
 		background: linear-gradient(135deg, #6a11cb, #2575fc);
 		color: white;
 	}
 
-	.echo {
-		position: relative;
-		padding: 20px;
-		border-radius: 10px;
-		text-align: center;
-		z-index: 5;
-	}
-
 	.echo::before {
 		content: "";
 		position: absolute;
-		top: -20px;
-		left: -20px;
-		right: -20px;
-		bottom: -20px;
-		background: inherit;
-		border-radius: inherit;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		backdrop-filter: blur(15px);
-		box-shadow: 
-		  0 0 0 10px rgba(255, 255, 255, 0.1),
-		  0 0 0 20px rgba(255, 255, 255, 0.05),
-		  0 0 0 30px rgba(255, 255, 255, 0.025);
 		z-index: -1;
 	}
 
 	@media screen and (min-width: 992px) {
-		section:first-of-type {
-			padding-top: 8rem;
-		}
-
 		section {
 			padding: 10rem;
+		}
+		
+		nav + *:not(.echo-container) {
+			padding-top: 8rem;
 		}
 	}
 }

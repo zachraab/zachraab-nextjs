@@ -13,7 +13,6 @@ body {
     --slide-size: 55%;
   }
   .embla__viewport {
-    overflow: hidden;
     cursor: grab;
   }
   .embla__viewport:active {
@@ -31,15 +30,21 @@ body {
     padding-left: var(--slide-spacing);
   }
   .embla__slide__number {
-    background-color: white;
-    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-    border-radius: 1.8rem;
+    border: solid, 4px, white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: var(--slide-height);
     user-select: none;
+    margin: 30px 0;
+    box-shadow: 
+		  0 0 0 10px rgba(255, 255, 255, 0.1),
+		  0 0 0 20px rgba(255, 255, 255, 0.05),
+		  0 0 0 30px rgba(255, 255, 255, 0.025),
+      inset 0 0 0 10px rgba(255, 255, 255, 0.1),
+		  inset 0 0 0 20px rgba(255, 255, 255, 0.05),
+		  inset 0 0 0 30px rgba(255, 255, 255, 0.025);
   }
   .embla__controls {
     display: grid;
@@ -66,21 +71,23 @@ body {
     border: 0;
     padding: 0;
     margin: 0;
-    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    box-shadow: inset 0 0 0 0.2rem white;
     width: 3.6rem;
     height: 3.6rem;
     z-index: 1;
     border-radius: 50%;
-    color: var(--text-body);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .embla__button:hover {
-    background-color: var(--detail-medium-contrast);
+    background-color: white;
+    color: rgb(107 114 128);
   }
   .embla__button:active {
     background-color: var(--detail-high-contrast);
+    color: rgb(107 114 128);
     box-shadow: var(--detail-high-contrast);
     opacity: initial;
   }
@@ -118,7 +125,7 @@ body {
     border-radius: 50%;
   }
   .embla__dot:after {
-    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    box-shadow: inset 0 0 0 0.2rem white;
     width: 1.4rem;
     height: 1.4rem;
     border-radius: 50%;
@@ -127,14 +134,15 @@ body {
     content: '';
   }
   .embla__dot:hover:after {
-    background-color: var(--detail-medium-contrast);
+    background-color: white;
   }
   .embla__dot:active:after {
     background-color: var(--detail-high-contrast);
     box-shadow: var(--detail-high-contrast);
   }
   .embla__dot--selected:after {
-    box-shadow: inset 0 0 0 0.2rem var(--text-body);
+    box-shadow: inset 0 0 0 0.2rem white;
+    background-color: #2575fc;
   }
   .embla__slide__number {
     backface-visibility: hidden;
