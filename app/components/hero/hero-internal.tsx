@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-export default function HeroInternal({image, isPortraitImage, headline, description}: {image: any, isPortraitImage: boolean, headline: string, description: string}) {
+export default function HeroInternal({image, alt, isPortraitImage, headline, description}: {image: any, alt: string, isPortraitImage: boolean, headline: string, description: string}) {
    return(
         <section className='flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-16 items-center text-center md:text-left'>
             { image && (
             <div className={`relative h-80 xl:h-[30rem] w-full ${ isPortraitImage && 'md:w-1/2'} lg:w-1/3 overflow-hidden`}>
                 <Image 
                     src={image}
-                    alt="A headshot of Zach wearing a suit with a blue and red shirt."
+                    alt={alt}
                     fill
                     priority
                     sizes='75vw'

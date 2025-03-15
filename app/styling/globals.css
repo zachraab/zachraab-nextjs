@@ -55,6 +55,15 @@
 		z-index: -1;
 	}
 
+	.parallax {
+		background-image: url("../../public/aspen_trees_ridgeway_colorado.jpg");
+		min-height: 500px;
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	@media screen and (min-width: 992px) {
 		section {
 			padding: 10rem;
