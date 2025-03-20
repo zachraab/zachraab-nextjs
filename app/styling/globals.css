@@ -64,7 +64,7 @@
 		background-size: cover;
 	}
 
-	.parallax h2::after{
+	.overlay::after{
 		content: "";
 		position: absolute;
 		top: 0;
