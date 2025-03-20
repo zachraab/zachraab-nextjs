@@ -16,7 +16,7 @@ export default function About() {
 				headline="Collaborative. Focused. Resourceful."
 				description="With a keen eye for detail and a passion for code, I excel in driving projects forward with purpose and commitment."
 			/>
-			<BackgroundImage />
+			<BackgroundImage imageFileName="aspen_trees_ridgeway_colorado.jpg" headline="Beautiful Colorado" />
 			<AboutMe />
 			<ThreeImages />
 		</>
