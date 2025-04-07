@@ -148,14 +148,14 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                   <div className="w-1/2 pr-8">
                     <div className="w-full md:w-1/2 mx-auto">
                     <p className="font-bold">Description:</p>
-                    <p className="">{description}</p>
+                    <p className="text-sm md:text-md">{description}</p>
                     </div>
                   </div>
                   <button onClick={() => toggleTechInfo(index)} className={`absolute bottom-2 text-3xl transform duration-300 rounded-full ${techVisibile[index] ? 'left-[50%] translate-x-2 hover:translate-x-1' : 'right-[50%] -translate-x-2 hover:-translate-x-1'}`}>{techVisibile[index] ? <LiaArrowCircleLeftSolid /> : <LiaArrowCircleRightSolid />}</button>
                   <div className="w-1/2 pl-8">
                     <div className="w-full md:w-1/2 mx-auto">
                       <p className="font-bold">Technology:</p>
-                      <p className="">{tech}</p>
+                      <p className="text-sm md:text-md">{tech}</p>
                     </div>
                   </div>
                 </div>

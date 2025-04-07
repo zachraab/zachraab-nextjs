@@ -4,7 +4,7 @@ export default function AboutMe() {
 
 			<h2 data-aos="fade-in" className="relative w-fit bg-inherit font-bold text-4xl mb-1">
 				{/* Dotted circle shape */}
-				<div className="absolute rounded-full top-0 left-0 -mt-16 ml-8 h-24 w-24 border-4 border-black border-dotted animate-spin-slow"></div>
+				<div className="absolute rounded-full top-0 left-0 -mt-16 ml-8 h-24 w-24 border-4 border-[#2575fc] border-dotted animate-spin-slow"></div>
 				<span className="relative bg-inherit">About</span>
 			</h2>
 				<hr className="w-full"/>
