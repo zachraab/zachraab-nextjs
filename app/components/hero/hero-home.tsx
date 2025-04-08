@@ -7,7 +7,7 @@ import { AiOutlineSend } from "react-icons/ai";
 
 export default function HeroHome() {
 	return(
-		<section className="flex flex-col xl:flex-row space-y-16 xl:space-y-0 xl:space-x-16 items-center text-center md:text-left">
+		<section className="flex flex-col xl:flex-row space-y-4 xl:space-y-0 xl:space-x-16 items-center text-center md:text-left">
 			<div className='relative h-80 xl:h-[35rem] w-full xl:w-1/2 overflow-hidden'>
 				<Image 
 					src={hikingImage.src}
@@ -20,7 +20,7 @@ export default function HeroHome() {
 					/>
 			</div>
 			<div className="w-full xl:w-1/2">
-				<Headline content="Hi I&apos;m Zach!" />
+				<Headline content="Hi I&apos;m Zach!" widthSize="w-full"/>
 				<p data-aos="fade-in" className="text-lg bg-gray-100 rounded-xl p-4">Dynamic Full Stack Developer with expertise in crafting responsive web solutions using JavaScript, Elixir and PHP</p>
 					<br/>
 				<p data-aos="fade-in"  data-aos-delay="100">Feel free to browse through my portfolio to see some of the projects I’ve worked on!</p>

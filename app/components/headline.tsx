@@ -1,8 +1,9 @@
-export default function Headline({ content }: {content : string}) {
+import DrawSvg from "./draw-svg";
+export default function Headline({ content, isWhite = false, widthSize = 'w-3/4' }: {content : string, isWhite?: boolean, widthSize?: string}) {
     return (
-        <div className="overflow-hidden">
-            <h2 data-aos="fade-left" className="font-bold text-4xl text-center md:text-left pb-1">{content}</h2>
+        <>
+            <DrawSvg drawText={content} isWhite={isWhite} widthSize={widthSize}/>
             <hr />
-        </div>
+        </>
     )
 }

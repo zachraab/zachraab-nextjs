@@ -16,7 +16,7 @@ export default function CaseStudies() {
 			{/* Animated square */}
 			<div className="before:animate-spin before:-mt-28 before:border-2 before:border-black before:absolute before:left-0 before:top-0 before:ml-48 before:h-56 before:w-56 before:origin-bottom-left before:translate-x-full before:-rotate-90 after:animate-spin after:-mt-28 after:border-l-2 after:border-black after:absolute after:left-0 after:top-0 after:ml-48 after:h-56 after:w-56 after:origin-bottom-right after:translate-x-full"></div>
 
-			<Headline content="Previous Work" />
+			<Headline content="Work" widthSize="w-1/2" />
 
 			<div className="flex flex-wrap flex-col md:flex-row relative space-y-8 md:space-y-0 md:justify-center">
 				<CaseStudy 

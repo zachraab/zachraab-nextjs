@@ -39,7 +39,7 @@ export default function FeaturedProjects() {
     <section className="bg-gray-500 text-white md:px-0 relative overflow-hidden">
         < BlobSvg />
         <div className="md:px-8 lg:px-40 relative">
-            <Headline content="Featured Projects" />
+            <Headline content="Projects" isWhite={true} widthSize="w-1/2"/>
         </div>
         <EmblaCarousel slides={projects} options={OPTIONS} />
     </section>
