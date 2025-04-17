@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function HeroInternal({image, alt, isPortraitImage, headline, description}: {image: any, alt: string, isPortraitImage: boolean, headline: string, description: string}) {
+export default function HeroInternal({image, alt = '', isPortraitImage, headline, description}: {image?: any, alt?: string, isPortraitImage?: boolean, headline: string, description: string}) {
    return(
         <section className='flex flex-col lg:flex-row space-y-16 lg:space-y-0 lg:space-x-16 items-center text-center md:text-left'>
             { image && (

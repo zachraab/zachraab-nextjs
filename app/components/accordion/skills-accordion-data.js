@@ -1,4 +1,5 @@
 import renderLogo from '../../../public/Render logo - Black.svg';
+import svgLogo from '../../../public/svg_logo.jpg';
 
 export const accordionItems = [
 	{ summary: 'Frontend' },
@@ -53,6 +54,11 @@ export const logos = [
         name: "sass",
         type: "frontend",
         source: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
+    },
+    {
+        name: "svg",
+        type: "frontend",
+        source: svgLogo.src,
     },
     {
         name: "jquery",
